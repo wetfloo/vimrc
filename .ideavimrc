@@ -8,14 +8,20 @@ let mapleader = " "
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
+" Enable relative numbers without needing a plugin
+set number relativenumber
+
+" Keep the previous mode when renaming items
+set idearefactormode=keep
+
 " Do incremental searching.
 set incsearch
 
-" Don't use Ex mode, use Q for formatting.
-map Q gq
-
 " Smart case search
 set smartcase ignorecase
+
+" Smart joining of lines, examples here: https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
+set ideajoin
 
 " Y yanks till end of line, inclusively
 nnoremap Y y$
