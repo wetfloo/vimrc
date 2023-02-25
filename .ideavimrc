@@ -60,12 +60,13 @@ nmap <leader>fc <action>(GotoClass)
 nmap <leader>ff <action>(GotoFile)
 nmap <leader>fs <action>(GotoSymbol)
 nmap <leader>fx <action>(GotoAction)
-nmap <leader>fe <action>(GotoNextError)
-nmap <leader>fE <action>(GotoPreviousError)
 nmap <leader>fr <action>(RecentFiles)
 
 nmap <leader>s <action>(ShowUsages)
 nmap <leader>S <action>(GotoImplementation)
+
+nmap <leader>e <action>(GotoNextError)
+nmap <leader>E <action>(GotoPreviousError)
 
 nmap <leader>d <action>(CloseContent)
 nmap <leader>D <action>(CloseAllEditors)
