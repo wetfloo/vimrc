@@ -56,8 +56,8 @@ nmap <leader>i <action>(Generate)
 
 nmap <leader>/ <action>(ShowErrorDescription)
 
-nmap <leader>fC <action>(GotoClass)
-nmap <leader>fc <action>(GotoFile)
+nmap <leader>fc <action>(GotoClass)
+nmap <leader>ff <action>(GotoFile)
 nmap <leader>fs <action>(GotoSymbol)
 nmap <leader>fx <action>(GotoAction)
 nmap <leader>fe <action>(GotoNextError)
