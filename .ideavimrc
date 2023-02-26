@@ -5,14 +5,10 @@ let mapleader = " "
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
 
-" Switches to English input method in Normal mode and restore input method in
-" Insert mode.
-set keep-english-in-normal-and-restore-in-insert
-
-" Define the list of additional buffers where IdeaVim is enabled.
 set ideavimsupport=dialog
 " Turns off all bells.
 set visualbell
+set noerrorbells
 
 " Throws an exception on IdeaVim error.
 set ideastrictmode
@@ -64,6 +60,7 @@ nmap <leader>fr <action>(RecentFiles)
 
 nmap <leader>s <action>(ShowUsages)
 nmap <leader>S <action>(GotoImplementation)
+nmap <leader>gs <action>(GotoSuperMethod)
 
 nmap <leader>e <action>(GotoNextError)
 nmap <leader>E <action>(GotoPreviousError)
