@@ -58,9 +58,10 @@ nmap <leader>fs <action>(GotoSymbol)
 nmap <leader>fx <action>(GotoAction)
 nmap <leader>fr <action>(RecentFiles)
 
-nmap <leader>s <action>(ShowUsages)
-nmap <leader>S <action>(GotoImplementation)
-nmap <leader>gs <action>(GotoSuperMethod)
+nmap <leader>gu <action>(ShowUsages)
+nmap <leader>gi <action>(GotoImplementation)
+nmap <leader>gI <action>(GotoSuperMethod)
+nmap <leader>gg <action>(GotoDeclaration)
 
 nmap <leader>e <action>(GotoNextError)
 nmap <leader>E <action>(GotoPreviousError)
