@@ -76,6 +76,7 @@ nmap <leader>w <action>(QuickJavaDoc)
 
 nmap <leader>rd <action>(Debug)
 nmap <leader>rr <action>(Run)
+nmap <leader>rs <action>(Stop)
 
 set history=1000
 
