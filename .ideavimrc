@@ -30,6 +30,9 @@ set smartcase ignorecase
 " Smart joining of lines, examples here: https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
 set ideajoin
 
+" Surround plugin for wrapping things into brackets
+set surround
+
 " Y yanks till end of line, inclusively
 nnoremap Y y$
 
