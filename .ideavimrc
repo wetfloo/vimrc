@@ -83,7 +83,7 @@ set history=1000
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
 " A negative number would make the highlight persistent.
-let g:highlightedyank_highlight_duration='7000'
+let g:highlightedyank_highlight_duration='500'
 let g:highlightedyank_highlight_color='rgba(128, 128, 128, 30)'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
