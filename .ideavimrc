@@ -68,9 +68,6 @@ nmap <leader>gi <action>(GotoImplementation)
 nmap <leader>gI <action>(GotoSuperMethod)
 nmap <leader>gg <action>(GotoDeclaration)
 
-nmap <leader>e <action>(GotoNextError)
-nmap <leader>E <action>(GotoPreviousError)
-
 nmap <leader>d <action>(CloseContent)
 nmap <leader>D <action>(CloseAllEditors)
 nmap <leader>u <action>(ReopenClosedTab)
