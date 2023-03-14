@@ -36,6 +36,8 @@ set surround
 " Y yanks till end of line, inclusively
 nnoremap Y y$
 
+vnoremap p "0p
+
 " system clipboard
 vmap <leader>y "*y
 vmap <leader>d "*d
