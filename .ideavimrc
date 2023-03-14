@@ -48,6 +48,10 @@ nmap <leader>P "*P
 vmap <leader>p "*p
 vmap <leader>P "*P
 
+" I hate reaching for number keys, so I'm putting start/end line shortcuts here
+noremap <leader>S ^
+noremap <leader>E $
+
 " actions
 nmap <Leader>c <Action>(RenameElement)
 
