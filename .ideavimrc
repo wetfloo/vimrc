@@ -36,6 +36,7 @@ set surround
 " Y yanks till end of line, inclusively
 nnoremap Y y$
 
+" Don't overwrite yank buffer when pasting over text in visual mode
 vnoremap p "0p
 
 " system clipboard
