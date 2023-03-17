@@ -40,57 +40,57 @@ nnoremap Y y$
 vnoremap p "0p
 
 " system clipboard
-vmap <leader>y "*y
-vmap <leader>d "*d
-nmap <leader>y "*yy
-nmap <leader>p "*p
-nmap <leader>P "*P
-vmap <leader>p "*p
-vmap <leader>P "*P
+vnoremap <leader>y "*y
+vnoremap <leader>d "*d
+nnoremap <leader>y "*yy
+nnoremap <leader>p "*p
+nnoremap <leader>P "*P
+vnoremap <leader>p "*p
+vnoremap <leader>P "*P
 
 " I hate reaching for number keys, so I'm putting start/end line shortcuts here
 noremap <leader>S ^
 noremap <leader>E $
 
 " actions
-nmap <Leader>c <Action>(RenameElement)
+nnoremap <Leader>c <action>(RenameElement)
 
-nmap <leader>h <action>(PreviousTab)
-nmap <leader>l <action>(NextTab)
-nmap <leader>k <action>(Back)
-nmap <leader>j <action>(Forward)
+noremap <leader>h <action>(PreviousTab)
+noremap <leader>l <action>(NextTab)
+noremap <leader>k <action>(Back)
+noremap <leader>j <action>(Forward)
 
-nmap <leader>i <action>(Generate)
+noremap <leader>i <action>(Generate)
 
-nmap <leader>/ <action>(ShowErrorDescription)
+noremap <leader>/ <action>(ShowErrorDescription)
 
-nmap <leader>fc <action>(GotoClass)
-nmap <leader>ff <action>(GotoFile)
-nmap <leader>fs <action>(GotoSymbol)
-nmap <leader>fx <action>(GotoAction)
-nmap <leader>fr <action>(RecentFiles)
+noremap <leader>fc <action>(GotoClass)
+noremap <leader>ff <action>(GotoFile)
+noremap <leader>fs <action>(GotoSymbol)
+noremap <leader>fx <action>(GotoAction)
+noremap <leader>fr <action>(RecentFiles)
 
-nmap <leader>gu <action>(ShowUsages)
-nmap <leader>gi <action>(GotoImplementation)
-nmap <leader>gI <action>(GotoSuperMethod)
-nmap <leader>gg <action>(GotoDeclaration)
+noremap <leader>gu <action>(ShowUsages)
+noremap <leader>gi <action>(GotoImplementation)
+noremap <leader>gI <action>(GotoSuperMethod)
+noremap <leader>gg <action>(GotoDeclaration)
 
-nmap <leader>d <action>(CloseContent)
-nmap <leader>D <action>(CloseAllEditors)
-nmap <leader>u <action>(ReopenClosedTab)
+noremap <leader>d <action>(CloseContent)
+noremap <leader>D <action>(CloseAllEditors)
+noremap <leader>u <action>(ReopenClosedTab)
 
-nmap <leader>w <action>(QuickJavaDoc)
+noremap <leader>w <action>(QuickJavaDoc)
 
-nmap <leader>rd <action>(Debug)
-nmap <leader>rr <action>(Run)
-nmap <leader>rs <action>(Stop)
+noremap <leader>rd <action>(Debug)
+noremap <leader>rr <action>(Run)
+noremap <leader>rs <action>(Stop)
 
 set history=1000
 
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
 " A negative number would make the highlight persistent.
-let g:highlightedyank_highlight_duration='500'
+let g:highlightedyank_highlight_duration='2000'
 let g:highlightedyank_highlight_color='rgba(128, 128, 128, 30)'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
