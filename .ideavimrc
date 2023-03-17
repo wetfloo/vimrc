@@ -85,6 +85,9 @@ map <leader>rd <action>(Debug)
 map <leader>rr <action>(Run)
 map <leader>rs <action>(Stop)
 
+map <leader>ss <action>(ToggleLineBreakpoint)
+map <leader>sf <action>(ReformatCode)
+
 set history=1000
 
 " Make the yanked region apparent!
