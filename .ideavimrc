@@ -91,7 +91,7 @@ set history=1000
 Plug 'machakann/vim-highlightedyank'
 " A negative number would make the highlight persistent.
 let g:highlightedyank_highlight_duration='2000'
-let g:highlightedyank_highlight_color='rgba(128, 128, 128, 30)'
+let g:highlightedyank_highlight_color='rgba(20, 180, 255, 25)'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
