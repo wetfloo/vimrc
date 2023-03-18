@@ -52,6 +52,9 @@ vnoremap <leader>P "*P
 noremap <leader>S ^
 noremap <leader>E $
 
+" Buffer command to switch between tabs faster
+nnoremap <leader>b :buffers<CR>:buffer<Space>
+
 " actions
 nmap <Leader>c <action>(RenameElement)
 
