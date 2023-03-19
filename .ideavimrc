@@ -53,6 +53,10 @@ noremap <leader>S ^
 noremap <leader>E $
 noremap <leader>c %
 
+" Hacky way to move stuff to a new line after commas, but will do for now
+" Useful for newlining list of arguments
+nnoremap <leader>n f,a<CR><Esc>
+
 " Buffer command to switch between tabs faster
 nnoremap <leader>b :buffers<CR>:buffer<Space>
 
