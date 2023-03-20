@@ -48,11 +48,6 @@ nnoremap <leader>P "*P
 vnoremap <leader>p "*p
 vnoremap <leader>P "*P
 
-" I hate reaching for number keys, so I'm putting start/end line shortcuts here
-noremap <leader>S ^
-noremap <leader>E $
-noremap <leader>x %
-
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
