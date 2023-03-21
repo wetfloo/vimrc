@@ -89,6 +89,7 @@ map <leader>rr <action>(Run)
 map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
 map <leader>rp <action>(Android.SyncProject)
 map <leader>rs <action>(Stop)
+map <leader>rb <action>(MakeGradleProject)
 
 map <leader>ss <action>(ToggleLineBreakpoint)
 map <leader>sf <action>(ReformatCode)
