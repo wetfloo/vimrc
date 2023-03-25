@@ -55,9 +55,6 @@ vnoremap <leader>P "+P
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
 
-" Buffer command to switch between tabs faster
-nnoremap <leader>b :buffers<CR>:buffer<Space>
-
 " actions
 nmap <Leader>c <action>(RenameElement)
 
