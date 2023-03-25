@@ -39,14 +39,17 @@ nnoremap Y y$
 " Don't overwrite yank buffer when pasting over text in visual mode
 vnoremap p "0p
 
-" system clipboard
-vnoremap <leader>y "*y
-vnoremap <leader>d "*d
-nnoremap <leader>y "*yy
-nnoremap <leader>p "*p
-nnoremap <leader>P "*P
-vnoremap <leader>p "*p
-vnoremap <leader>P "*P
+" Use system clipboard as a default register
+" set clipboard=unnamedplus
+
+" Mappings to use system clipboard on demand, while still allowing to use registers
+vnoremap <leader>y "+y
+vnoremap <leader>d "+d
+nnoremap <leader>y "+yy
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
