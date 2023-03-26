@@ -37,7 +37,7 @@ set surround
 nnoremap Y y$
 
 " Don't overwrite yank buffer when pasting over text in visual mode
-vnoremap p "0p
+" vnoremap p "0p
 
 " Use system clipboard as a default register
 set clipboard=unnamedplus
