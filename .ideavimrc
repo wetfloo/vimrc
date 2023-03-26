@@ -51,6 +51,10 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 
+" Change indentation from visual mode without going back to normal every time
+vnoremap < <gv
+vnoremap > >gv
+
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
@@ -58,41 +62,39 @@ nnoremap <leader>n f,a<CR><Esc>
 " actions
 nmap <Leader>c <action>(RenameElement)
 
-map <leader>h <action>(PreviousTab)
-map <leader>l <action>(NextTab)
-map <leader>k <action>(Back)
-map <leader>j <action>(Forward)
+nmap <leader>h <action>(PreviousTab)
+nmap <leader>l <action>(NextTab)
+nmap <leader>k <action>(Back)
+nmap <leader>j <action>(Forward)
 
-map <leader>i <action>(Generate)
+nmap <leader>i <action>(Generate)
 
-map <leader>/ <action>(ShowErrorDescription)
+nmap <leader>/ <action>(ShowErrorDescription)
 
-map <leader>fc <action>(GotoClass)
-map <leader>ff <action>(GotoFile)
-map <leader>fs <action>(GotoSymbol)
-map <leader>fx <action>(GotoAction)
-map <leader>fr <action>(RecentFiles)
+nmap <leader>fc <action>(GotoClass)
+nmap <leader>ff <action>(GotoFile)
+nmap <leader>fs <action>(GotoSymbol)
+nmap <leader>fx <action>(GotoAction)
+nmap <leader>fr <action>(RecentFiles)
 
-map <leader>gu <action>(ShowUsages)
-map <leader>gi <action>(GotoImplementation)
-map <leader>gI <action>(GotoSuperMethod)
-map <leader>gg <action>(GotoDeclaration)
+nmap <leader>gu <action>(ShowUsages)
+nmap <leader>gi <action>(GotoImplementation)
+nmap <leader>gI <action>(GotoSuperMethod)
+nmap <leader>gg <action>(GotoDeclaration)
 
-map <leader>d <action>(CloseContent)
-map <leader>D <action>(CloseAllEditors)
-map <leader>u <action>(ReopenClosedTab)
+nmap <leader>u <action>(ReopenClosedTab)
 
-map <leader>w <action>(QuickJavaDoc)
+nmap <leader>w <action>(QuickJavaDoc)
 
-map <leader>rd <action>(Debug)
-map <leader>rr <action>(Run)
-map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
-map <leader>rp <action>(Android.SyncProject)
-map <leader>rs <action>(Stop)
-map <leader>rb <action>(MakeGradleProject)
+nmap <leader>rd <action>(Debug)
+nmap <leader>rr <action>(Run)
+nmap <leader>rh <action>(Flutter.Toolbar.ReloadAction)
+nmap <leader>rp <action>(Android.SyncProject)
+nmap <leader>rs <action>(Stop)
+nmap <leader>rb <action>(MakeGradleProject)
 
-map <leader>ss <action>(ToggleLineBreakpoint)
-map <leader>sf <action>(ReformatCode)
+nmap <leader>ss <action>(ToggleLineBreakpoint)
+nmap <leader>sf <action>(ReformatCode)
 
 set history=1000
 
