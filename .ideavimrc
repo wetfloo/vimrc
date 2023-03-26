@@ -40,16 +40,16 @@ nnoremap Y y$
 vnoremap p "0p
 
 " Use system clipboard as a default register
-" set clipboard=unnamedplus
+set clipboard=unnamedplus
 
 " Mappings to use system clipboard on demand, while still allowing to use registers
-vnoremap <leader>y "+y
-vnoremap <leader>d "+d
-nnoremap <leader>y "+yy
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>p "+p
-vnoremap <leader>P "+P
+" vnoremap <leader>y "+y
+" vnoremap <leader>d "+d
+" nnoremap <leader>y "+yy
+" nnoremap <leader>p "+p
+" nnoremap <leader>P "+P
+" vnoremap <leader>p "+p
+" vnoremap <leader>P "+P
 
 " Change indentation from visual mode without going back to normal every time
 vnoremap < <gv
