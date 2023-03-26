@@ -105,14 +105,4 @@ let g:highlightedyank_highlight_duration='2000'
 let g:highlightedyank_highlight_color='rgba(20, 180, 255, 25)'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-"map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-
-"" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
-
-
-" Find more examples here: https://jb.gg/share-ideavimrc
+" Find examples here: https://jb.gg/share-ideavimrc
