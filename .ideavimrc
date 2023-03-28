@@ -58,14 +58,17 @@ vnoremap > >gv
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
-
-" actions
 nmap <Leader>c <action>(RenameElement)
 
-nmap <leader>h <action>(PreviousTab)
-nmap <leader>l <action>(NextTab)
-nmap <leader>k <action>(Back)
-nmap <leader>j <action>(Forward)
+map <A-h> <action>(PreviousTab)
+map <A-l> <action>(NextTab)
+map <A-k> <action>(Back)
+map <A-j> <action>(Forward)
+
+map <A-d> <action>(CloseEditor)
+map <A-u> <action>(ReopenClosedTab)
+
+map <leader>\ <action>(HideAllWindows)
 
 nmap <leader>i <action>(Generate)
 
@@ -81,8 +84,8 @@ nmap <leader>gu <action>(ShowUsages)
 nmap <leader>gi <action>(GotoImplementation)
 nmap <leader>gI <action>(GotoSuperMethod)
 nmap <leader>gg <action>(GotoDeclaration)
+nmap <leader>gh <action>(CallHierarchy)
 
-nmap <leader>u <action>(ReopenClosedTab)
 
 nmap <leader>w <action>(QuickJavaDoc)
 
@@ -95,6 +98,7 @@ nmap <leader>rb <action>(MakeGradleProject)
 
 nmap <leader>ss <action>(ToggleLineBreakpoint)
 nmap <leader>sf <action>(ReformatCode)
+nmap <leader>sv <action>(Debugger.EvaluateInConsole)
 
 set history=1000
 
