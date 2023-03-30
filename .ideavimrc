@@ -71,7 +71,7 @@ map <A-u> <action>(ReopenClosedTab)
 map <leader>\ <action>(HideAllWindows)
 
 nmap <leader>i <action>(Generate)
-
+nmap <leader>w <action>(QuickJavaDoc)
 nmap <leader>/ <action>(ShowErrorDescription)
 
 nmap <leader>fc <action>(GotoClass)
@@ -85,6 +85,7 @@ nmap <leader>gi <action>(GotoImplementation)
 nmap <leader>gI <action>(GotoSuperMethod)
 nmap <leader>gg <action>(GotoDeclaration)
 nmap <leader>gh <action>(CallHierarchy)
+
 
 " All kinds of splits to move between multiple tabs and windows
 nmap <leader>dv <action>(SplitVertically)
