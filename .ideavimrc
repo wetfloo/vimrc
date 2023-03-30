@@ -86,8 +86,21 @@ nmap <leader>gI <action>(GotoSuperMethod)
 nmap <leader>gg <action>(GotoDeclaration)
 nmap <leader>gh <action>(CallHierarchy)
 
-
-nmap <leader>w <action>(QuickJavaDoc)
+" All kinds of splits to move between multiple tabs and windows
+nmap <leader>dv <action>(SplitVertically)
+nmap <leader>dh <action>(SplitHorizontally)
+nmap <leader>du <action>(Unsplit)
+nmap <leader>ds <action>(MoveEditorToOppositeTabGroup)
+nmap <leader>dn <action>(EditSourceInNewWindow)
+map <A-w> <action>(NextWindow)
+sethandler <c-h> a:vim
+sethandler <c-l> a:vim
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
 
 nmap <leader>rd <action>(Debug)
 nmap <leader>rr <action>(Run)
