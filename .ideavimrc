@@ -93,7 +93,7 @@ nmap <leader>dh <action>(SplitHorizontally)
 nmap <leader>du <action>(Unsplit)
 nmap <leader>ds <action>(MoveEditorToOppositeTabGroup)
 nmap <leader>dn <action>(EditSourceInNewWindow)
-map <A-w> <action>(NextWindow)
+map <C-w> <action>(NextWindow)
 sethandler <c-h> a:vim
 sethandler <c-l> a:vim
 sethandler <c-j> a:vim
