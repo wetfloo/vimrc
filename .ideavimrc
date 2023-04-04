@@ -55,10 +55,15 @@ set clipboard=unnamedplus
 vnoremap < <gv
 vnoremap > >gv
 
+" yank till start, move to last character of yanked region, and then one more left
+nnoremap gy y^`]l
+nnoremap gc c^
+nnoremap gd d^
+
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
-nmap <Leader>c <action>(RenameElement)
+map <Leader>c <action>(RenameElement)
 
 map <A-h> <action>(PreviousTab)
 map <A-l> <action>(NextTab)
@@ -70,49 +75,49 @@ map <A-u> <action>(ReopenClosedTab)
 
 map <leader>\ <action>(HideAllWindows)
 
-nmap <leader>i <action>(Generate)
-nmap <leader>w <action>(QuickJavaDoc)
-nmap <leader>/ <action>(ShowErrorDescription)
+map <leader>i <action>(Generate)
+map <leader>w <action>(QuickJavaDoc)
+map <leader>/ <action>(ShowErrorDescription)
 
-nmap <leader>fc <action>(GotoClass)
-nmap <leader>ff <action>(GotoFile)
-nmap <leader>fs <action>(GotoSymbol)
-nmap <leader>fx <action>(GotoAction)
-nmap <leader>fr <action>(RecentFiles)
+map <leader>fc <action>(GotoClass)
+map <leader>ff <action>(GotoFile)
+map <leader>fs <action>(GotoSymbol)
+map <leader>fx <action>(GotoAction)
+map <leader>fr <action>(RecentFiles)
 
-nmap <leader>gu <action>(ShowUsages)
-nmap <leader>gi <action>(GotoImplementation)
-nmap <leader>gI <action>(GotoSuperMethod)
-nmap <leader>gg <action>(GotoDeclaration)
-nmap <leader>gh <action>(CallHierarchy)
+map <leader>gu <action>(ShowUsages)
+map <leader>gi <action>(GotoImplementation)
+map <leader>gI <action>(GotoSuperMethod)
+map <leader>gg <action>(GotoDeclaration)
+map <leader>gh <action>(CallHierarchy)
 
 
 " All kinds of splits to move between multiple tabs and windows
-nmap <leader>dv <action>(SplitVertically)
-nmap <leader>dh <action>(SplitHorizontally)
-nmap <leader>du <action>(Unsplit)
-nmap <leader>ds <action>(MoveEditorToOppositeTabGroup)
-nmap <leader>dn <action>(EditSourceInNewWindow)
+map <leader>dv <action>(SplitVertically)
+map <leader>dh <action>(SplitHorizontally)
+map <leader>du <action>(Unsplit)
+map <leader>ds <action>(MoveEditorToOppositeTabGroup)
+map <leader>dn <action>(EditSourceInNewWindow)
 map <C-w> <action>(NextWindow)
 sethandler <c-h> a:vim
 sethandler <c-l> a:vim
 sethandler <c-j> a:vim
 sethandler <c-k> a:vim
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
 
-nmap <leader>rd <action>(Debug)
-nmap <leader>rr <action>(Run)
-nmap <leader>rh <action>(Flutter.Toolbar.ReloadAction)
-nmap <leader>rp <action>(Android.SyncProject)
-nmap <leader>rs <action>(Stop)
-nmap <leader>rb <action>(MakeGradleProject)
+map <leader>rd <action>(Debug)
+map <leader>rr <action>(Run)
+map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
+map <leader>rp <action>(Android.SyncProject)
+map <leader>rs <action>(Stop)
+map <leader>rb <action>(MakeGradleProject)
 
-nmap <leader>ss <action>(ToggleLineBreakpoint)
-nmap <leader>sf <action>(ReformatCode)
-nmap <leader>sv <action>(Debugger.EvaluateInConsole)
+map <leader>ss <action>(ToggleLineBreakpoint)
+map <leader>sf <action>(ReformatCode)
+map <leader>sv <action>(Debugger.EvaluateInConsole)
 
 set history=1000
 
