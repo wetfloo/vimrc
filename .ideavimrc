@@ -60,6 +60,11 @@ nnoremap gy y^`]l
 nnoremap gc c^
 nnoremap gd d^
 
+" Function body magic
+nnoremap yo v%l%y`[
+nnoremap do v%l%d
+nnoremap co v%l%c
+
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
