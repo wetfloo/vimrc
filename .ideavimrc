@@ -33,14 +33,45 @@ set ideajoin
 " Surround plugin for wrapping things into brackets
 set surround
 
+" Switch keyboard locale automatically
+set keep-english-in-normal-and-restore-in-insert
+
+" Highlight jumpable characters
+set quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:qs_accepted_chars = [
+ 'a', 'b', 'c', 'd', 'e',
+ 'f', 'g', 'h', 'i', 'j',
+ 'k', 'l', 'm', 'n', 'o',
+ 'p', 'q', 'r', 's', 't',
+ 'u', 'v', 'w', 'x', 'y',
+ 'z', 'A', 'B', 'C', 'D',
+ 'E', 'F', 'G', 'H', 'I',
+ 'J', 'K', 'L', 'M', 'N',
+ 'O', 'P', 'Q', 'R', 'S',
+ 'T', 'U', 'V', 'W', 'X',
+ 'Y', 'Z', '0', '1', '2',
+ '3', '4', '5', '6', '7',
+ '8', '9',
+]
+let g:qs_primary_color = '#fa579c'
+let g:qs_secondary_color = '#add149'
+
+" Use system clipboard as a default register
+set clipboard=unnamedplus
+
+" Make the yanked region apparent!
+Plug 'machakann/vim-highlightedyank'
+" A negative number would make the highlight persistent.
+let g:highlightedyank_highlight_duration='2000'
+let g:highlightedyank_highlight_color='rgba(20, 180, 255, 25)'
+
+
 " Y yanks till end of line, inclusively
 nnoremap Y y$
 
 " Don't overwrite yank buffer when pasting over text in visual mode
 " vnoremap p "0p
-
-" Use system clipboard as a default register
-set clipboard=unnamedplus
 
 " Mappings to use system clipboard on demand, while still allowing to use registers
 " vnoremap <leader>y "+y
@@ -125,12 +156,6 @@ map <leader>sf <action>(ReformatCode)
 map <leader>sv <action>(Debugger.EvaluateInConsole)
 
 set history=1000
-
-" Make the yanked region apparent!
-Plug 'machakann/vim-highlightedyank'
-" A negative number would make the highlight persistent.
-let g:highlightedyank_highlight_duration='2000'
-let g:highlightedyank_highlight_color='rgba(20, 180, 255, 25)'
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 " Find examples here: https://jb.gg/share-ideavimrc
