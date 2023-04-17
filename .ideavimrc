@@ -1,4 +1,3 @@
-<out T>, [17-Apr-23 18:05]
 let mapleader = " "
 
 " Show a few lines of context around the cursor. Note that this makes the
