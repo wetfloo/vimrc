@@ -1,3 +1,4 @@
+<out T>, [17-Apr-23 18:05]
 let mapleader = " "
 
 " Show a few lines of context around the cursor. Note that this makes the
@@ -8,6 +9,12 @@ set ideavimsupport=dialog
 " Turns off all bells.
 set visualbell
 set noerrorbells
+
+set argtextobj
+let g:argtextobj_pairs="[:],(:),<:>"
+
+set exchange
+set commentary
 
 " Set current mode ideavim is in
 set showmode
@@ -143,6 +150,9 @@ noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
+
+<out T>, [17-Apr-23 18:05]
+
 
 map <leader>rd <action>(Debug)
 map <leader>rr <action>(Run)
