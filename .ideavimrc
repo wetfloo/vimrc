@@ -92,15 +92,15 @@ nnoremap Y y$
 vnoremap < <gv
 vnoremap > >gv
 
-" yank till start, move to last character of yanked region, and then one more left
+" yank till start, move to last character of yanked region, and then one more
 nnoremap <leader>Y y^`]l
 nnoremap <leader>C c^
 nnoremap <leader>D d^
 
 " Function body magic
-nnoremap yo v%l%y`[
-nnoremap do v%l%d
-nnoremap co v%l%c
+nnoremap yo 0v%l%y`[
+nnoremap do 0v%l%d
+nnoremap co 0v%l%c
 
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
