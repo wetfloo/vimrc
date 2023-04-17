@@ -93,9 +93,9 @@ vnoremap < <gv
 vnoremap > >gv
 
 " yank till start, move to last character of yanked region, and then one more left
-nnoremap <leader>y y^`]l
-nnoremap <leader>c c^
-nnoremap <leader>d d^
+nnoremap <leader>Y y^`]l
+nnoremap <leader>C c^
+nnoremap <leader>D d^
 
 " Function body magic
 nnoremap yo v%l%y`[
