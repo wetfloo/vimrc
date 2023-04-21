@@ -150,9 +150,6 @@ noremap <c-l> <c-w>l
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 
-<out T>, [17-Apr-23 18:05]
-
-
 map <leader>rd <action>(Debug)
 map <leader>rr <action>(Run)
 map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
