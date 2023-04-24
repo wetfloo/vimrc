@@ -72,6 +72,8 @@ Plug 'machakann/vim-highlightedyank'
 let g:highlightedyank_highlight_duration='2000'
 let g:highlightedyank_highlight_color='rgba(20, 180, 255, 25)'
 
+" Vim bindings support in file explorer
+set NERDTree
 
 " Y yanks till end of line, inclusively
 nnoremap Y y$
@@ -132,6 +134,8 @@ map <leader>gi <action>(GotoImplementation)
 map <leader>gI <action>(GotoSuperMethod)
 map <leader>gg <action>(GotoDeclaration)
 map <leader>gh <action>(CallHierarchy)
+
+map <leader>t <action>(ActivateProjectToolWindow)
 
 
 " All kinds of splits to move between multiple tabs and windows
