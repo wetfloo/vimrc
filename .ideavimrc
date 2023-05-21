@@ -100,9 +100,6 @@ noremap <C-u> <C-u>zz
 noremap <C-f> <C-f>zz
 noremap <C-b> <C-b>zz
 noremap <C-r> <C-b>zz
-noremap u uzz
-noremap n nuzzzv
-noremap N Nuzzzv
 
 " yank till start, move to last character of yanked region, and then one more
 nnoremap <leader>Y y^`]l
