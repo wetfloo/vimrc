@@ -127,8 +127,7 @@ map <A-u> <action>(ReopenClosedTab)
 map <leader>\ <action>(HideAllWindows)
 
 map <leader>i <action>(Generate)
-map <leader>w <action>(QuickJavaDoc)
-map <leader>/ <action>(ShowErrorDescription)
+map <leader>e <action>(ShowErrorDescription)
 
 map <leader>fc <action>(GotoClass)
 map <leader>ff <action>(GotoFile)
