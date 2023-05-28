@@ -112,11 +112,12 @@ nnoremap do 0v%l%d
 nnoremap co 0v%l%c
 
 " Pasting over something in visual mode doesn't overwrite the current buffer
-xmap p "_dP
+xnoremap p "_dP
 
 " Hacky way to move stuff to a new line after commas, but will do for now
 " Useful for newlining list of arguments
 nnoremap <leader>n f,a<CR><Esc>
+nnoremap <leader>b f.a<CR><Esc>
 map <Leader>c <action>(RenameElement)
 
 map <A-h> <action>(PreviousTab)
