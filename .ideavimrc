@@ -173,6 +173,9 @@ map <leader>rb <action>(MakeGradleProject)
 map <leader>ss <action>(ToggleLineBreakpoint)
 map <leader>sf <action>(ReformatCode)
 map <leader>sv <action>(Debugger.EvaluateInConsole)
+" Collapse garbage "documentation"
+map <leader>sd <action>(CollapseDocComments)
+map <leader>sz <action>(ExpandDocComments)
 
 set history=1000
 
