@@ -176,6 +176,7 @@ map <leader>sv <action>(Debugger.EvaluateInConsole)
 " Collapse garbage "documentation"
 map <leader>sd <action>(CollapseDocComments)
 map <leader>sz <action>(ExpandDocComments)
+map <leader>st <action>(ToggleInlayHintsGloballyAction)
 
 set history=1000
 
