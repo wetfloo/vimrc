@@ -174,9 +174,11 @@ map <leader>ss <action>(ToggleLineBreakpoint)
 map <leader>sf <action>(ReformatCode)
 map <leader>sv <action>(Debugger.EvaluateInConsole)
 " Collapse garbage "documentation"
-map <leader>sd <action>(CollapseDocComments)
-map <leader>sz <action>(ExpandDocComments)
-map <leader>st <action>(ToggleInlayHintsGloballyAction)
+map <leader>vv <action>(CollapseDocComments)
+map <leader>vd <action>(ExpandDocComments)
+map <leader>vt <action>(ToggleInlayHintsGloballyAction)
+map <leader>vf <action>(ToggleFullScreen)
+map <leader>vz <action>(ToggleZenMode)
 
 set history=1000
 
