@@ -169,6 +169,7 @@ noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 
 map <leader>rd <action>(Debug)
+map <leader>re <action>(AndroidConnectDebuggerAction)
 map <leader>rr <action>(Run)
 map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
 map <leader>rp <action>(Android.SyncProject)
