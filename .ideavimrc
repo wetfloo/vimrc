@@ -63,9 +63,6 @@ let g:qs_accepted_chars = [
 let g:qs_primary_color = '#fa579c'
 let g:qs_secondary_color = '#add149'
 
-" Use system clipboard as a default register
-set clipboard=unnamedplus
-
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
 " A negative number would make the highlight persistent.
@@ -104,6 +101,14 @@ noremap <C-b> <C-b>zz
 nnoremap <leader>Y y^`]l
 nnoremap <leader>C c^
 nnoremap <leader>D d^
+
+" Do stuff using the system register
+xnoremap <leader>y "+y
+xnoremap <leader>d "+d
+xnoremap <leader>p "+p
+nnoremap <leader>y "+y
+nnoremap <leader>d "+d
+nnoremap <leader>p "+p
 
 " Function body magic
 nnoremap yo 0v%l%y`[
