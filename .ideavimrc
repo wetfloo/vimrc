@@ -116,6 +116,10 @@ nnoremap yo 0v%l%y`[
 nnoremap do 0v%l%d
 nnoremap co 0v%l%c
 
+" Swap around 0 and ^, because 0 is easier to reach
+noremap 0 ^
+noremap ^ 0
+
 " Pasting over something in visual mode doesn't overwrite the current buffer
 xnoremap p "_dP
 
