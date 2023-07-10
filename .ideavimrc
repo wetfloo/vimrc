@@ -76,18 +76,6 @@ set NERDTree
 " Y yanks till end of line, inclusively
 nnoremap Y y$
 
-" Don't overwrite yank buffer when pasting over text in visual mode
-" vnoremap p "0p
-
-" Mappings to use system clipboard on demand, while still allowing to use registers
-" vnoremap <leader>y "+y
-" vnoremap <leader>d "+d
-" nnoremap <leader>y "+yy
-" nnoremap <leader>p "+p
-" nnoremap <leader>P "+P
-" vnoremap <leader>p "+p
-" vnoremap <leader>P "+P
-
 " Change indentation from visual mode without going back to normal every time
 vnoremap < <gv
 vnoremap > >gv
@@ -129,25 +117,28 @@ nnoremap <leader>n f,a<CR><Esc>
 nnoremap <leader>b f.i<CR><Esc>f.
 map <Leader>c <action>(RenameElement)
 
+" Move around tabs
 map <A-h> <action>(PreviousTab)
 map <A-l> <action>(NextTab)
 map <A-k> <action>(Back)
 map <A-j> <action>(Forward)
-
+" Manage open/close tabs
 map <A-d> <action>(CloseEditor)
 map <A-u> <action>(ReopenClosedTab)
-
+" Blow away all tool windows
 map <leader>\ <action>(HideAllWindows)
 
 map <leader>i <action>(Generate)
 map <leader>e <action>(ShowErrorDescription)
 
+" Finds
 map <leader>fc <action>(GotoClass)
 map <leader>ff <action>(GotoFile)
 map <leader>fs <action>(GotoSymbol)
 map <leader>fx <action>(GotoAction)
 map <leader>fr <action>(RecentFiles)
 
+" GOTOs
 map <leader>gu <action>(ShowUsages)
 map <leader>gi <action>(GotoImplementation)
 map <leader>gI <action>(GotoSuperMethod)
@@ -173,17 +164,17 @@ noremap <c-l> <c-w>l
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 
+" Make things run
 map <leader>rd <action>(Debug)
 map <leader>re <action>(AndroidConnectDebuggerAction)
 map <leader>rr <action>(Run)
-map <leader>rh <action>(Flutter.Toolbar.ReloadAction)
 map <leader>rp <action>(Android.SyncProject)
 map <leader>rs <action>(Stop)
 map <leader>rb <action>(MakeGradleProject)
 
-map <leader>ss <action>(ToggleLineBreakpoint)
 map <leader>sf <action>(ReformatCode)
-map <leader>sv <action>(Debugger.EvaluateInConsole)
+
+" Things related to visuals in the editor
 " Collapse garbage "documentation"
 map <leader>vv <action>(CollapseDocComments)
 map <leader>vd <action>(ExpandDocComments)
@@ -191,7 +182,10 @@ map <leader>vt <action>(ToggleInlayHintsGloballyAction)
 map <leader>vf <action>(ToggleFullScreen)
 map <leader>vz <action>(ToggleZenMode)
 
-set history=1000
+" Debugging
+map <leader>ov <action>(Debugger.EvaluateInConsole)
+map <leader>od <action>(Debugger.RemoveAllBreakpointsInFile)
+map <leader>oD <action>(Debugger.RemoveAllBreakpoints)
+map <leader>oo <action>(ToggleLineBreakpoint)
 
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-" Find examples here: https://jb.gg/share-ideavimrc
+set history=1000
