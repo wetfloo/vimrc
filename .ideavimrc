@@ -124,6 +124,7 @@ map <A-k> <action>(Back)
 map <A-j> <action>(Forward)
 " Manage open/close tabs
 map <A-d> <action>(CloseEditor)
+map <A-\> <action>(CloseAllEditorsButActive)
 map <A-u> <action>(ReopenClosedTab)
 " Blow away all tool windows
 map <leader>\ <action>(HideAllWindows)
