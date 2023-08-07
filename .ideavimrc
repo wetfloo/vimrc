@@ -188,5 +188,6 @@ map <leader>ov <action>(Debugger.EvaluateInConsole)
 map <leader>od <action>(Debugger.RemoveAllBreakpointsInFile)
 map <leader>oD <action>(Debugger.RemoveAllBreakpoints)
 map <leader>oo <action>(ToggleLineBreakpoint)
+map <leader>om <action>(XDebugger.MuteBreakpoints)
 
 set history=1000
