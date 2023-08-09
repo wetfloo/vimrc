@@ -190,4 +190,10 @@ map <leader>oD <action>(Debugger.RemoveAllBreakpoints)
 map <leader>oo <action>(ToggleLineBreakpoint)
 map <leader>om <action>(XDebugger.MuteBreakpoints)
 
+" Move lines in visual and normal modes
+nnoremap <A-p> :mo -2<CR>
+nnoremap <A-n> :mo +1<CR>
+vnoremap <A-p> :'<,'> mo -2<CR>gv=gv
+vnoremap <A-n> :'<,'> mo '>+<CR>gv=gv
+
 set history=1000
