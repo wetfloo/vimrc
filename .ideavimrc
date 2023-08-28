@@ -181,7 +181,7 @@ map <leader>vv <action>(CollapseDocComments)
 map <leader>vd <action>(ExpandDocComments)
 map <leader>vt <action>(ToggleInlayHintsGloballyAction)
 map <leader>vf <action>(ToggleFullScreen)
-map <leader>vz <action>(ToggleZenMode)
+map <leader>vz <action>(ToggleDistractionFreeMode)
 
 " Debugging
 map <leader>ov <action>(Debugger.EvaluateInConsole)
@@ -196,6 +196,6 @@ nnoremap <A-n> :mo +1<CR>
 xnoremap <A-p> :'<,'> mo -2<CR>gv=gv
 xnoremap <A-n> :'<,'> mo '>+<CR>gv=gv
 
-map <leader>cc <action>(Compare.SameVersion)
+map <leader>kc <action>(Compare.SameVersion)
 
 set history=1000
