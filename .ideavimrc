@@ -50,6 +50,9 @@ set keep-english-in-normal-and-restore-in-insert
 " Move around the file faster than before
 set sneak
 
+" Match in languages that don't use braces
+set matchit
+
 " Highlight jumpable characters
 set quickscope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
