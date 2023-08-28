@@ -1,5 +1,10 @@
 let mapleader = " "
-
+function! s:is_intellij()
+    has('ide') && &ide=~? 'intellij'
+endfunction
+function! s:is_android_studio()
+    return has('ide') && &ide=~? 'android studio'
+endfunction
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
@@ -41,6 +46,9 @@ set surround
 
 " Switch keyboard locale automatically
 set keep-english-in-normal-and-restore-in-insert
+
+" Move around the file faster than before
+set sneak
 
 " Highlight jumpable characters
 set quickscope
@@ -169,7 +177,11 @@ noremap <c-k> <c-w>k
 map <leader>rd <action>(Debug)
 map <leader>re <action>(AndroidConnectDebuggerAction)
 map <leader>rr <action>(Run)
-map <leader>rp <action>(Android.SyncProject)
+if is_intellij()
+    map <leader>rp <action>(ExternalSystem.ProjectRefreshAction)
+elseif is_android_studio()
+    map <leader>rp <action>(Android.SyncProject)
+endif
 map <leader>rs <action>(Stop)
 map <leader>rb <action>(MakeGradleProject)
 
