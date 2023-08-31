@@ -213,4 +213,6 @@ xnoremap <A-n> :'<,'> mo '>+<CR>gv=gv
 
 map <leader>kc <action>(Compare.SameVersion)
 
+nnoremap <leader>; m`lb~``
+
 set history=1000
