@@ -197,6 +197,7 @@ map <leader>vd <action>(ExpandDocComments)
 map <leader>vt <action>(ToggleInlayHintsGloballyAction)
 map <leader>vf <action>(ToggleFullScreen)
 map <leader>vz <action>(ToggleDistractionFreeMode)
+map <Leader>' <action>(MarkNotificationsAsRead)
 
 " Debugging
 map <leader>ov <action>(Debugger.EvaluateInConsole)
